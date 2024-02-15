@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Real Count Pilpres Khusus Untuk Aqsa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text-center mt-2 mb-5">
+            <h1>Real Count Pilpres Khusus Untuk Aqsa</h1>
+        </div>
+        <div>
+            <h4>Suara Masuk: <span id="votesEntrancePersentage"></span></h4>   
+            <h6>Terakhir diperbarui: <span id="lastUpdateTime"></span></h6>   
+        </div>
+        <div class="chart-container mt-3">
+            <div class="progress-stacked" id="mainChart">
+                <div class="progress" role="progressbar" style="width: 30%">
+                    <div class="progress-bar bg-success">01</div>
+                </div>
+                <div class="progress" role="progressbar" style="width: 20%">
+                    <div class="progress-bar bg-info">02</div>
+                </div>
+                <div class="progress" role="progressbar" style="width: 15%">
+                    <div class="progress-bar bg-danger">03</div>
+                </div>
+            </div>
+        </div>
+        <table id="provinceVotes" class="table white mt-5">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Provinsi</th>
+                    <th>Progres</th>
+                    <th colspan="2" class="bg-success text-center">01</th>
+                    <th colspan="2" class="bg-info text-center">02</th>
+                    <th colspan="2" class="bg-danger text-center">03</th>
+                </tr>
+            </thead>
+            <tbody id="provinceVotesList">
+
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="./index.js"></script>
+</html>
