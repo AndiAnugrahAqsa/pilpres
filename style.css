@@ -38,6 +38,10 @@
     font-weight: bold;
 }
 
+.container-lg{
+    padding: 0px 20px 0px 20px;
+}
+
 .bg-info {
     background-color: var(--bs-info) !important;
     color: #000;

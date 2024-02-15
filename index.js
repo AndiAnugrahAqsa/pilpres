@@ -18,7 +18,7 @@ async function index() {
     progres = votesData.progres
     table = votesData.table
 
-    $('#votesEntrancePersentage').text(`${chart.persen} % (${progres.progres} dari ${progres.total}) TPS`)
+    $('#votesEntrancePersentage').text(`${chart.persen}% || ${progres.progres} dari ${progres.total} TPS`)
     $('#lastUpdateTime').text(`${votesData.ts}`)
 
     totalVotes = 0;
@@ -37,7 +37,7 @@ async function index() {
     $('#mainChart div.progress-bar').each(function(i){
         $(this).text(`0${i+1} ( ${Number(candidateVotes[i]/totalVotes*100).toFixed(2)}% )`)
     })
-    console.log(table);
+
     Object.keys(table).forEach(function (item, i) {
         totalProvinceVote = table[item][100025] + table[item][100026] + table[item][100027]
         provinceVotes = [table[item][100025], table[item][100026], table[item][100027]]
